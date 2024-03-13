@@ -8,6 +8,8 @@ import CodeBlocks from "../components/core/HomePage/CodeBlocks.jsx";
 import Footer from "../components/common/Footer.jsx";
 import TimelineSection from "../components/core/HomePage/TimelineSection.jsx";
 import LearningLanguageSection from "../components/core/HomePage/LearningLanguageSection.jsx";
+import InstructorSection from "../components/core/HomePage/InstructorSection.jsx";
+import ExploreMore from "../components/core/HomePage/ExploreMore.jsx";
 
 function Home() {
   return (
@@ -118,6 +120,9 @@ function Home() {
             codeColor={"text-yellow-25"}
           />
         </div>
+
+            <ExploreMore />
+
       </div>
 
       {/* Section-2 */}
@@ -173,6 +178,15 @@ function Home() {
       </div>
 
       {/* Section-3 */}
+      <div className="w-11/12 mx-auto max-w-maxContent flex-col items-center justify-between gap-8 bg-richblack-900 text-white">
+
+            <InstructorSection />
+
+            <h2 className="text-center text-4xl font-semibold mt-10">Reviews from other learners</h2>
+
+            {/* Review slider here */}
+
+      </div>
 
       {/* Footer */}
       <Footer />
