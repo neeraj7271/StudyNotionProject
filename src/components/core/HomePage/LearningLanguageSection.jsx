@@ -11,11 +11,11 @@ function LearningLanguageSection() {
   <div className="mt-[130px]">
     <div className="flex flex-col gap-5 items-center mb-20">
 
-        <div className="text-4xl font-semibold text-center">
+        <div className=" text-3xl lg:text-4xl font-semibold lg:text-center">
             Your Swiss Knife for
             <HightlightText text={" Learning any language"} />
         </div>
-        <div className="text-center text-richblack-600 mx-auto mt-3 text-base font-medium w-[70%]
+        <div className="lg:text-center text-richblack-600 mx-auto mt-3 text-base font-medium lg:w-[70%]
         ">
         Using spin making learning multiple languages easy. with 20+ languages realistic voice-over, progress tracking, custom schedule and more.
         </div>

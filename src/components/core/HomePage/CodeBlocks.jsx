@@ -6,10 +6,10 @@ import { TypeAnimation } from "react-type-animation";
 
 function CodeBlocks({position, heading, subHeading, ctabtn1, ctabtn2, codeblock,backgroudGradient, codeColor}) {
   return (
-    <div className={`flex ${position} my-20 justify-between flex-col lg:gap-10 gap-10`}>
+    <div className={`flex ${position} lg:my-20 my-8 justify-between flex-col lg:gap-10 gap-10`}>
 
         {/* section 1 */}
-        <div className="w-[50%] flex flex-col gap-8">
+        <div className="lg:w-[50%] w-[100%] flex flex-col lg:gap-8 gap-5">
 
             {heading}
             <div className="text-richblack-300 font-bold">

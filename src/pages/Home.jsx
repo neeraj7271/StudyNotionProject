@@ -27,12 +27,12 @@ function Home() {
         </Link>
 
         {/* Heading */}
-        <div className="text-center text-4xl font-semibold mt-7">
+        <div className="lg:text-center lg:text-4xl text-3xl font-semibold mt-7">
           Empower Your Future with
-          <HightlightText text={"Coding Text"} />
+          <HightlightText text={"Coding Skills"} />
         </div>
         {/* SubHeading */}
-        <div className="w-[90%] text-center text-lg font-bold text-richblack-300 mt-3">
+        <div className="w-[100%] lg:w-[80%] lg:text-center text-lg font-bold text-richblack-300 mt-3">
           With our online coding courses, you can learn at your own pace, from
           anywhere in the world, and get access to a wealth of resources,
           including hands-on projects, quizzes, and personalized feedback from
@@ -53,7 +53,7 @@ function Home() {
         {/* Video */}
         <div className="shadow-blue-200 mx-3 my-7 shadow-[10px_-5px_50px_-5px]">
           <video
-            className="shadow-[20px_20px_rgba(255,255,255)]"
+            className="shadow-[10px_10px_rgba(255,255,255)] lg:shadow-[20px_20px_rgba(255,255,255)]"
             muted
             loop
             autoPlay
@@ -127,11 +127,11 @@ function Home() {
 
       {/* Section-2 */}
       <div className="bg-pure-greys-5 text-richblack-700">
-        <div className="homepage_bg h-[310px]">
+        <div className="homepage_bg lg:h-[310px] h-[100px]">
           <div className="w-11/12 max-w-maxContent flex flex-col justify-center items-center mx-auto">
-            <div className="h-[150px]"></div>
+            <div className="lg:h-[150px] h-[50px]"></div>
 
-            <div className="flex flex-row gap-7 text-white">
+            <div className="flex flex-row gap-7 text-white lg:mt-8">
               <CTAButton active={true} linkto={"/signup"}>
                 <div className="flex gap-2 items-center">
                   Explore full catelog
@@ -149,13 +149,13 @@ function Home() {
         </div>
 
         <div className="mx-auto w-11/12 max-w-maxContent flex flex-col items-center justify-between gap-7">
-          <div className="flex flex-row gap-5 mb-10 mt-[95px]">
-            <div className="text-4xl font-semibol w-[45%]">
+          <div className="flex flex-col gap-5 mb-10  mt-[55px] lg:mt-20 lg:flex-row lg:gap-0">
+            <div className=" text-3xl lg:text-4xl font-semibold lg:w-[45%]">
               Get the skills you need for a
               <HightlightText text={"job that is in demand"} />
             </div>
 
-            <div className="flex flex-col gap-10 w-[45%] items-start">
+            <div className="flex flex-col gap-10 lg:w-[45%] items-start">
               <div className="text-[16px]">
                 The modern StudyNotion is the dictates its own terms. Today, to
                 be a competitive specialist requires more than professional

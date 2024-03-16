@@ -32,13 +32,13 @@ const timeline = [
 function TimelineSection() {
   return (
     <div>
-      <div className="flex flex-row gap-20 items-center">
+      <div className="flex lg:flex-row flex-col gap-20 items-center">
 
-        <div className="w-[45%] flex flex-col gap-5">
+        <div className="lg:w-[45%] flex flex-col gap-5">
           {timeline.map((element, index) => {
             return (
               
-              <div className="flex flex-col gap-6" key={index}>
+              <div className="flex flex-col lg:gap-6" key={index}>
 
               <div className="flex flex-row gap-6" key={index}>
 
@@ -47,16 +47,16 @@ function TimelineSection() {
                 </div>
 
                 <div>
-                  <h2 className="font-semibol text-18px]">{element.heading}</h2>
-                  <p className="text-base">{element.Description}</p>
+                  <h2 className="font-semibold text-[18px]">{element.heading}</h2>
+                  <p className="lg:text-base text-[14px]">{element.Description}</p>
                 </div>
                 
               </div>
 
               <div
-                  className={`hidden ${
+                  className={` ${
                     timeline.length - 1 === index ? "hidden" : "lg:block"
-                  }  h-14 border-dotted border-r border-richblack-100 bg-richblack-400/0 w-[26px]`}
+                  }  h-10 lg:h-14 border-dotted border-r border-richblack-100 bg-richblack-400/0 w-[26px]`}
                 ></div>
               </div>
               
